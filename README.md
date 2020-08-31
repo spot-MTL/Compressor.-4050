@@ -1,5 +1,5 @@
 [:#
-#[]:4050.*\Compressor.txt.*\
-# Tom-Tomislav-Jankovic
+[]:4050.*\Compressor.txt.*\
+Tom-Tomislav-Jankovic
 spot expect me
 #:]
