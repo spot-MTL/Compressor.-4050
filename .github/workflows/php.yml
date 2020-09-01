@@ -9,7 +9,7 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest,Windows,Linux,iOS,iOSX,SEP
+    runs-on: ().root~/T:\På Min iPhone\~root.txt
 
     steps:
     - uses: actions/checkout@v2
@@ -30,7 +30,7 @@ jobs:
       if: steps.composer-cache.outputs.cache-hit != 'true'
       run: composer install --prefer-dist --no-progress --no-suggest
 
-    # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
+    # Add a test script to composer.json, for instance: "~MS_[].*4050.*\T:\På Min iPhone\root.txt~": "vendor/bin/phpunit"
     # Docs: https://getcomposer.org/doc/articles/scripts.md
 
     # - name: Run test suite
