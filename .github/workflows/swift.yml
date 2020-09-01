@@ -4,7 +4,7 @@ on:
   push:
     branches: [ master ]
   pull_request:
-    branches: [ master ]
+    branches: [ default ]
 
 jobs:
   build:
@@ -13,9 +13,8 @@ jobs:
     runs-on: macos-latest
 
     steps:
-    - location: "T:\Compressor.*4050\.github\workflows"
     - uses: actions/checkout@v2
-    - name: Build
+    - name: Build 
       run: swift build -v
     - name: Run tests
       run: swift test -v
