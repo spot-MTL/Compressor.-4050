@@ -1,0 +1,152 @@
+2020-08-31T23:41:21.8292343Z ##[section]Starting: Request a runner to run this job
+2020-08-31T23:41:22.1415580Z Can't find any online and idle self-hosted runner in current repository that matches the required labels: 'ubuntu-latest'
+2020-08-31T23:41:22.1415685Z Can't find any online and idle self-hosted runner in current repository's account/organization that matches the required labels: 'ubuntu-latest'
+2020-08-31T23:41:22.1416088Z Found online and idle hosted runner in current repository's account/organization that matches the required labels: 'ubuntu-latest'
+2020-08-31T23:41:22.3320337Z ##[section]Finishing: Request a runner to run this job
+2020-08-31T23:41:26.9950643Z Current runner version: '2.273.0'
+2020-08-31T23:41:26.9982755Z ##[group]Operating System
+2020-08-31T23:41:26.9983565Z Ubuntu
+2020-08-31T23:41:26.9983802Z 18.04.5
+2020-08-31T23:41:26.9984025Z LTS
+2020-08-31T23:41:26.9984251Z ##[endgroup]
+2020-08-31T23:41:26.9984510Z ##[group]Virtual Environment
+2020-08-31T23:41:26.9984759Z Environment: ubuntu-18.04
+2020-08-31T23:41:26.9984937Z Version: 20200817.1
+2020-08-31T23:41:26.9985266Z Included Software: https://github.com/actions/virtual-environments/blob/ubuntu18/20200817.1/images/linux/Ubuntu1804-README.md
+2020-08-31T23:41:26.9985565Z ##[endgroup]
+2020-08-31T23:41:26.9986595Z Prepare workflow directory
+2020-08-31T23:41:27.0171114Z Prepare all required actions
+2020-08-31T23:41:27.0184262Z Download action repository 'actions/checkout@v2'
+2020-08-31T23:41:29.0512365Z ##[group]Run actions/checkout@v2
+2020-08-31T23:41:29.0512737Z with:
+2020-08-31T23:41:29.0513045Z   repository: spot-MTL/Compressor.-4050
+2020-08-31T23:41:29.0513444Z   token: ***
+2020-08-31T23:41:29.0513675Z   ssh-strict: true
+2020-08-31T23:41:29.0513865Z   persist-credentials: true
+2020-08-31T23:41:29.0514058Z   clean: true
+2020-08-31T23:41:29.0514230Z   fetch-depth: 1
+2020-08-31T23:41:29.0514417Z   lfs: false
+2020-08-31T23:41:29.0514604Z   submodules: false
+2020-08-31T23:41:29.0514791Z ##[endgroup]
+2020-08-31T23:41:29.9685318Z Syncing repository: spot-MTL/Compressor.-4050
+2020-08-31T23:41:29.9686269Z ##[group]Getting Git version info
+2020-08-31T23:41:29.9692155Z Working directory is '/home/runner/work/Compressor.-4050/Compressor.-4050'
+2020-08-31T23:41:29.9692881Z [command]/usr/bin/git version
+2020-08-31T23:41:29.9693082Z git version 2.28.0
+2020-08-31T23:41:29.9694104Z ##[endgroup]
+2020-08-31T23:41:29.9694621Z Deleting the contents of '/home/runner/work/Compressor.-4050/Compressor.-4050'
+2020-08-31T23:41:29.9695698Z ##[group]Initializing the repository
+2020-08-31T23:41:29.9696294Z [command]/usr/bin/git init /home/runner/work/Compressor.-4050/Compressor.-4050
+2020-08-31T23:41:29.9696899Z Initialized empty Git repository in /home/runner/work/Compressor.-4050/Compressor.-4050/.git/
+2020-08-31T23:41:29.9697563Z [command]/usr/bin/git remote add origin https://github.com/spot-MTL/Compressor.-4050
+2020-08-31T23:41:29.9697961Z ##[endgroup]
+2020-08-31T23:41:29.9698223Z ##[group]Disabling automatic garbage collection
+2020-08-31T23:41:29.9698630Z [command]/usr/bin/git config --local gc.auto 0
+2020-08-31T23:41:29.9698830Z ##[endgroup]
+2020-08-31T23:41:29.9700786Z ##[group]Setting up auth
+2020-08-31T23:41:29.9701423Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2020-08-31T23:41:29.9702136Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :
+2020-08-31T23:41:29.9702811Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2020-08-31T23:41:29.9703609Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :
+2020-08-31T23:41:29.9704329Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2020-08-31T23:41:29.9704742Z ##[endgroup]
+2020-08-31T23:41:29.9704996Z ##[group]Fetching the repository
+2020-08-31T23:41:29.9706195Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +1c6eef7a92ebb8fdda4c736ad3c24e907ff930fa:refs/remotes/origin/master
+2020-08-31T23:41:29.9920546Z remote: Enumerating objects: 31, done.        
+2020-08-31T23:41:29.9921377Z remote: Counting objects:   3% (1/31)        
+2020-08-31T23:41:29.9924138Z remote: Counting objects:   6% (2/31)        
+2020-08-31T23:41:29.9925954Z remote: Counting objects:   9% (3/31)        
+2020-08-31T23:41:29.9927725Z remote: Counting objects:  12% (4/31)        
+2020-08-31T23:41:29.9929569Z remote: Counting objects:  16% (5/31)        
+2020-08-31T23:41:29.9930956Z remote: Counting objects:  19% (6/31)        
+2020-08-31T23:41:29.9932606Z remote: Counting objects:  22% (7/31)        
+2020-08-31T23:41:29.9934023Z remote: Counting objects:  25% (8/31)        
+2020-08-31T23:41:29.9935496Z remote: Counting objects:  29% (9/31)        
+2020-08-31T23:41:29.9937000Z remote: Counting objects:  32% (10/31)        
+2020-08-31T23:41:30.0002224Z remote: Counting objects:  35% (11/31)        
+2020-08-31T23:41:30.0002596Z remote: Counting objects:  38% (12/31)        
+2020-08-31T23:41:30.0002886Z remote: Counting objects:  41% (13/31)        
+2020-08-31T23:41:30.0003168Z remote: Counting objects:  45% (14/31)        
+2020-08-31T23:41:30.0003435Z remote: Counting objects:  48% (15/31)        
+2020-08-31T23:41:30.0004047Z remote: Counting objects:  51% (16/31)        
+2020-08-31T23:41:30.0004998Z remote: Counting objects:  54% (17/31)        
+2020-08-31T23:41:30.0005290Z remote: Counting objects:  58% (18/31)        
+2020-08-31T23:41:30.0005596Z remote: Counting objects:  61% (19/31)        
+2020-08-31T23:41:30.0005876Z remote: Counting objects:  64% (20/31)        
+2020-08-31T23:41:30.0007254Z remote: Counting objects:  67% (21/31)        
+2020-08-31T23:41:30.0008536Z remote: Counting objects:  70% (22/31)        
+2020-08-31T23:41:30.0010188Z remote: Counting objects:  74% (23/31)        
+2020-08-31T23:41:30.0011261Z remote: Counting objects:  77% (24/31)        
+2020-08-31T23:41:30.0012308Z remote: Counting objects:  80% (25/31)        
+2020-08-31T23:41:30.0013014Z remote: Counting objects:  83% (26/31)        
+2020-08-31T23:41:30.0013305Z remote: Counting objects:  87% (27/31)        
+2020-08-31T23:41:30.0014336Z remote: Counting objects:  90% (28/31)        
+2020-08-31T23:41:30.0015435Z remote: Counting objects:  93% (29/31)        
+2020-08-31T23:41:30.0015732Z remote: Counting objects:  96% (30/31)        
+2020-08-31T23:41:30.0016831Z remote: Counting objects: 100% (31/31)        
+2020-08-31T23:41:30.0017053Z remote: Counting objects: 100% (31/31), done.        
+2020-08-31T23:41:30.0017878Z remote: Compressing objects:   4% (1/25)        
+2020-08-31T23:41:30.0018098Z remote: Compressing objects:   8% (2/25)        
+2020-08-31T23:41:30.0020064Z remote: Compressing objects:  12% (3/25)        
+2020-08-31T23:41:30.0020284Z remote: Compressing objects:  16% (4/25)        
+2020-08-31T23:41:30.0020836Z remote: Compressing objects:  20% (5/25)        
+2020-08-31T23:41:30.0021314Z remote: Compressing objects:  24% (6/25)        
+2020-08-31T23:41:30.0021853Z remote: Compressing objects:  28% (7/25)        
+2020-08-31T23:41:30.0022332Z remote: Compressing objects:  32% (8/25)        
+2020-08-31T23:41:30.0023235Z remote: Compressing objects:  36% (9/25)        
+2020-08-31T23:41:30.0023474Z remote: Compressing objects:  40% (10/25)        
+2020-08-31T23:41:30.0024023Z remote: Compressing objects:  44% (11/25)        
+2020-08-31T23:41:30.0024236Z remote: Compressing objects:  48% (12/25)        
+2020-08-31T23:41:30.0024714Z remote: Compressing objects:  52% (13/25)        
+2020-08-31T23:41:30.0025283Z remote: Compressing objects:  56% (14/25)        
+2020-08-31T23:41:30.0025481Z remote: Compressing objects:  60% (15/25)        
+2020-08-31T23:41:30.0025953Z remote: Compressing objects:  64% (16/25)        
+2020-08-31T23:41:30.0026482Z remote: Compressing objects:  68% (17/25)        
+2020-08-31T23:41:30.0026959Z remote: Compressing objects:  72% (18/25)        
+2020-08-31T23:41:30.0027746Z remote: Compressing objects:  76% (19/25)        
+2020-08-31T23:41:30.0027970Z remote: Compressing objects:  80% (20/25)        
+2020-08-31T23:41:30.0028494Z remote: Compressing objects:  84% (21/25)        
+2020-08-31T23:41:30.0028706Z remote: Compressing objects:  88% (22/25)        
+2020-08-31T23:41:30.0029194Z remote: Compressing objects:  92% (23/25)        
+2020-08-31T23:41:30.0029729Z remote: Compressing objects:  96% (24/25)        
+2020-08-31T23:41:30.0029924Z remote: Compressing objects: 100% (25/25)        
+2020-08-31T23:41:30.0030135Z remote: Compressing objects: 100% (25/25), done.        
+2020-08-31T23:41:30.0033634Z remote: Total 31 (delta 3), reused 0 (delta 0), pack-reused 0        
+2020-08-31T23:41:30.0540883Z From https://github.com/spot-MTL/Compressor.-4050
+2020-08-31T23:41:30.0541436Z  * [new ref]         1c6eef7a92ebb8fdda4c736ad3c24e907ff930fa -> origin/master
+2020-08-31T23:41:30.0579992Z ##[endgroup]
+2020-08-31T23:41:30.0580281Z ##[group]Determining the checkout info
+2020-08-31T23:41:30.0584409Z ##[endgroup]
+2020-08-31T23:41:30.0584628Z ##[group]Checking out the ref
+2020-08-31T23:41:30.0591919Z [command]/usr/bin/git checkout --progress --force -B master refs/remotes/origin/master
+2020-08-31T23:41:30.0685836Z Reset branch 'master'
+2020-08-31T23:41:30.0690921Z Branch 'master' set up to track remote branch 'master' from 'origin'.
+2020-08-31T23:41:30.0707888Z ##[endgroup]
+2020-08-31T23:41:30.0708551Z [command]/usr/bin/git log -1
+2020-08-31T23:41:30.0743840Z commit 1c6eef7a92ebb8fdda4c736ad3c24e907ff930fa
+2020-08-31T23:41:30.0744743Z Author: Tom Tomislav Jankovic <60274733+spot-MTL@users.noreply.github.com>
+2020-08-31T23:41:30.0745596Z Date:   Tue Sep 1 01:41:18 2020 +0200
+2020-08-31T23:41:30.0745920Z 
+2020-08-31T23:41:30.0746335Z     Update README.md
+2020-08-31T23:41:30.0837557Z ##[group]Run echo Hello, world!
+2020-08-31T23:41:30.0837808Z [36;1mecho Hello, world![0m
+2020-08-31T23:41:30.0886196Z shell: /bin/bash -e {0}
+2020-08-31T23:41:30.0886409Z ##[endgroup]
+2020-08-31T23:41:30.1034570Z Hello, world!
+2020-08-31T23:41:30.1059743Z ##[group]Run echo Add other actions to build,
+2020-08-31T23:41:30.1059994Z [36;1mecho Add other actions to build,[0m
+2020-08-31T23:41:30.1060198Z [36;1mecho test, and deploy your project.[0m
+2020-08-31T23:41:30.1100566Z shell: /bin/bash -e {0}
+2020-08-31T23:41:30.1100766Z ##[endgroup]
+2020-08-31T23:41:30.1194806Z Add other actions to build,
+2020-08-31T23:41:30.1196405Z test, and deploy your project.
+2020-08-31T23:41:30.1240032Z Post job cleanup.
+2020-08-31T23:41:30.2338941Z [command]/usr/bin/git version
+2020-08-31T23:41:30.2405267Z git version 2.28.0
+2020-08-31T23:41:30.2443197Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2020-08-31T23:41:30.2490243Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :
+2020-08-31T23:41:30.2786691Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2020-08-31T23:41:30.2839642Z http.https://github.com/.extraheader
+2020-08-31T23:41:30.2841136Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2020-08-31T23:41:30.2882875Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :
+2020-08-31T23:41:30.3234435Z Cleaning up orphan processes
