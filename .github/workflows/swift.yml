@@ -8,6 +8,7 @@ on:
 
 jobs:
   build:
+  run: ubuntu-latest;Windows;iOS;iOSX;Linux
 
     runs-on: macos-latest
 
