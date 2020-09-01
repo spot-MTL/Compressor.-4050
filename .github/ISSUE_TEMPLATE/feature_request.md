@@ -1,9 +1,9 @@
 ---
 name: Feature request
 about: Suggest an idea for this project
-title: ''
-labels: ''
-assignees: ''
+title: '?!$%(.2)%$!?,win7,ult'
+labels: '?!$%12%$!?'
+assignees: '?!$%(.2)$!?'
 
 ---
 
