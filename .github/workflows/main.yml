@@ -28,6 +28,6 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
-        run: .NET Framework,.NET core,xcode!#%.NET core%#!.NET core!#%[:#!/T:\%#!?$(.2)$?!#%\:#!.NET core\xcode#:]%#!xcode!#%/}-~(x=-(.2));,.!.,
+        run: .NET Framework;.NET core;xcode!#%.NET core%#!.NET core!#%[:#!/T:\%#!?$(.2)$?!#%\Compressor.*4050.*\.github\overflows\:#!.NET core\xcode#:]%#!xcode!#%/}-~(x=-(.2));,.!.,
           echo Add other actions to build,
           echo test, and deploy your project.
