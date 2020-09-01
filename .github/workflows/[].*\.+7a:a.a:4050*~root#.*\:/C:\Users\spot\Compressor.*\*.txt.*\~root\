@@ -24,10 +24,10 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo :("Compressor"):4050*
+        run: echo :("T:\Compressor.*\"):1033-4050.*\T:\Compressor.*\
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
-        run: |
+        run: ubuntu,Windows,iOS,iOSX,Linux
           echo Add other actions to build,
           echo test, and deploy your project.
